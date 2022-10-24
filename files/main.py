@@ -10,6 +10,7 @@ PATH = os.path.join(os.getcwd(), cache_folder)
 def clean_cache():
     if os.path.isdir(PATH):
         for file_name in os.listdir(PATH):
+            print(file_name)
             os.remove(os.path.join(PATH, file_name))
     else:
         os.mkdir(PATH)
@@ -43,9 +44,9 @@ def find_password(filelist):
 
 if __name__ == "__main__":
     clean_cache()
-    cache_zip('files/data.zip', PATH)
-    print(cached_files()) 
-    print(find_password(cached_files()))
+    # cache_zip('files/data.zip', PATH)
+    # print(cached_files()) 
+    # print(find_password(cached_files()))
 
 
 
