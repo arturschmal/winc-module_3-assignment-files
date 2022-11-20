@@ -1,4 +1,4 @@
-# Files assigment
+# Files assignment
 
 ### Assignment for the Back-end Development course at Winc Academy.
 
